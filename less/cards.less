@@ -1,0 +1,55 @@
+.cards-container {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas en la fila */
+    align-items: center; /* Alinea verticalmente */
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: nowrap; /* Asegura que las tarjetas estén en una sola fila */
+    width: 100%; /* Usa todo el ancho disponible */
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+        transform: translateY(-5px);
+    }
+  
+    img {
+        width: 100%;
+        border-radius: 8px;
+    }
+  
+    h3 {
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+  
+    p {
+        font-size: 0.9rem;
+        color: #666;
+    }
+  
+    .btn-primary {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 12px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: #0056b3;
+        }
+    }
+}
+
+  
